@@ -1,48 +1,44 @@
 # React-MyMap
-MyMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
+
+### Project Description
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
+MyMap is a Single Page Application (SPA) created in `React` and developed with `create-react-app`. 
+It fetches data from `Google Maps API` and `FourSquare API`. 
 
 ![neighborhoodmap](https://github.com/dianavile/NeighbourhoodMap/blob/master/Neighbourhoodmap.png)
 
+### Project requirements
+The goal of this project is to build a Single Page Application (SPA) created in `React` to show a GoogleMap of your neighbourhood.
+Requirements: implement third-party APIs GoogleMap and Foursquare to provide additional information about the location.
+Additional functionality: map markers, infowindow, search funcion, list view. 
+
 Setting Up
 =================
-## Installation Create React App
-To start using this project follow these steps:
-* Git clone this [repository](https://github.com/dianavile/Neighbourhoodmap.git) or download as .zip file
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-To install: 
-
-1) Create a new folder/repo with the name of the project "neighbourhoodmap"
-2) Install the Create React App from [Create React App](https://github.com/facebook/create-react-app),
-using the below code comments in the Terminal.
+To  __install__ this project:
 ```
-npx create-react-app neighbourhoodmap
-cd neighbourhoodmap
-npm fix audit (*there is a security issue, you can fix it using this code)
-npm start
+npm start 
 ```
-3) As seen above, I have chosen for __npx__ 
-Yet, there are alternative ways to create a new app. 
-To create a new app, you can choose one of the following three methods:
+To  __clone or download __ this project:
+```
+    $ git clone https://github.com/dianavile/MyMap.git
+```
+- To open the folder to  __run the project __:
+```
+`npm install`
+```
+ - To  __run the development server__:
+ ```
+`npm start`
+```
+  - To  __view the app in the browser__:
+- Open [http://localhost:3000](http://localhost:3000).
 
-METHOD 1: __npx__
-`npx create-react-app my-app` (npx comes with npm 5.2+ and higher, see instructions for older npm versions)
 
-METHOD 2:__npm__
-`npm init react-app my-app` (npm init <initializer> is available in npm 6+)
-
-METHOD 3:__Yarn__
-`yarn create react-app my-app` (yarn create is available in Yarn 0.25+)
-
-Running any of these commands creates a start directory called inside the current folder. 
-
-## Start the project directory 
-- Add `npm start` in the Terminal (as explained above), to __run the app in the development mode__.
-- Open [http://localhost:3000](http://localhost:3000) to __view the app in the browser__.
-  The page will automatically reload if you make edits. You can see any lint errors in the console.
+Project Directory
+=================
 Inside the __project directory__, it will generate the initial project structure and install the dependencies:
 ```
-neighbourhoodmap
+mymap
 ├── README.md
 ├── package.json (=here all dependencies will be installed.)
 ├── .gitignore (=file to instruct which files need to be ignored at production).
@@ -60,33 +56,30 @@ neighbourhoodmap
     └── serviceWorker.js
 ```
 ## React Components
-The Neighbourhoodmap app contains the following __components__:
+The MyMap app contains the following __components__:
 ```
 └── src
-    ├── Header.css
+    ├── NavigationBar.js
     ├── Map.js
     ├── MapStyle.json
     ├── Locations.js
     ├── SideBar.js
-    ├── Footer.js
 ```
 
 Deploying
 =================
-To deploy the neighbourhoopmap project, use the following command in your Terminal:
+To deploy the project, use the following command in your Terminal:
 
-### `npm run build`
+ ## Service Worker
+ `Create React App`includes a service worker, by default. 
+To enable the service worker, run the application in production build mode:
+
+ ```
+npm run build
+```
 This comment builds the app for production to the `build` folder.<br>
 It bundles React in production mode and optimizes the build for the best performance in a minified version.
 More information about [deployment](https://facebook.github.io/create-react-app/docs/deployment).
-
-### #Service Worker
-`Create React App`includes a service worker, by default. 
-To enable it, the application needs to be runned in production build mode, with `npm run build` as described above, followed by:
-* cd into the build directory
-* `npm install -g serve` (to install static server in terminal).
-* `serve -s build`  (to run it from terminal).
-* localhost:5000 (to visit the project offline with the service worker)
 
 ## Browser requirements
 The minimum default set of browsers for this project are:
@@ -101,23 +94,22 @@ The minimum default set of browsers for this project are:
 This means, the project is available on most default browsers, except on: Internet Explorer < 11 and opera_mini.
 More info on [changing default browsers](https://github.com/lukeed/pwa/issues/48)
 
-## Dependencies
+Dependencies
+=================
 This project is build with the following dependencies:
 
-#### Dev dependencies (npm packages)
+ #### Packages (Dev dependencies- npm packages)
 To install all development dependencies, check the provided links:
-- [Create React App](https://github.com/facebook/create-react-app)
-- [React v 16.5.2](https://www.npmjs.com/package/react/v/16.5.2)  
-- [React-dom v 16.5.2](https://www.npmjs.com/package/react-dom/v/16.5.2) 
-- [React-google-maps v 9.4.5](https://www.npmjs.com/package/react-google-maps)
-- [React-scripts v 2.1.1](https://www.npmjs.com/package/react-scripts)
+ - [Create-react-app](https://github.com/facebookincubator/create-react-app)
+ - [Material IO](https://www.npmjs.com/package/create-react-app)
 
-##### API
-* [Google Maps API](https://cloud.google.com/maps-platform/)
-* [Foursquare API](https://developer.foursquare.com/)
+ #### API
+ - [Google Maps API](https://cloud.google.com/maps-platform/)
+ - [Foursquare API](https://developer.foursquare.com/)
 
-#### Design
-* [Google Fonts](https://fonts.google.com/)
+ #### Design
+- [Google Fonts](https://fonts.google.com/)
+- [Material IO](https://www.npmjs.com/package/create-react-app)
 
 Version
 =================
